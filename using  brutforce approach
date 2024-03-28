@@ -1,0 +1,13 @@
+a=input().split()
+wc=len(a) #"wc" wordcount
+vc=0 #vowelcount
+cc=0 #consonantcount
+v="aeiouAEIOU" #vowel
+for i in a:
+  for j in i:
+    if j.isalpha():
+      if j in v:
+        vc=vc+1
+      else:
+        cc=cc+1
+print(wc,vc,cc) 
